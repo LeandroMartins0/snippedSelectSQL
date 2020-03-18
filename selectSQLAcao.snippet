@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Select</Title>
+            <Shortcut>sel</Shortcut>
+            <Description>SELECT * FROM _ WHERE 1=1 AND</Description>
+            <Author/>
+            <SnippetTypes>
+                <SnippetType>SurroundsWith</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Code Language="SQL">
+                <![CDATA[
+SELECT * FROM dbo.$selected$$end$ with(nolock)
+WHERE 1=1
+--AND
+]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
